@@ -1,654 +1,313 @@
 <!DOCTYPE html>
-<!-- saved from url=(0028)https://ursite.us/accordion/ -->
-<html lang="en" style="--vsc-domain: &quot;localhost&quot;;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+.village-iframe{width:100%;height:100%;border:none;display:block;position:fixed;top:0;left:0;z-index:2147483647;background:#0000003d;color-scheme:light}.village-iframe.village-loading{display:flex;justify-content:center;align-items:center}.village-iframe>.village-spinner{width:1.5rem;height:1.5rem;border:2px solid #000;border-left-color:transparent;border-bottom-color:transparent;border-radius:50%;animation:spin .45s linear infinite}.village-iframe.village-hidden{display:none}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.village-hidden{display:none}[village-paths-data=facepiles]{display:flex;align-items:center;padding-right:.5rem}[village-paths-data=facepiles] img{width:1.5rem;height:1.5rem;border-radius:50%;margin-right:-.5rem}[village-paths-data=facepiles] img.village-facepiler-avatar-not-found{filter:blur(7px)}[village-paths-data=facepiles] img:last-child{margin-right:0}[village-paths-data=count]{padding-right:.25rem}[village-paths-availability=error],[village-paths-availability=found],[village-paths-availability=not-found],[village-paths-availability=not-activated]{display:none!important}[village-paths-availability=loading]{display:inline-flex!important}
 
-  <title>Accordion Source</title>
-  <link rel="shortcut icon" href="https://ursite.us/accordion/assets/logo-orange.svg" type="image/x-icon">
-  
-<script type="text/javascript" async="" src="./srcs/js"></script>
+.accordion-link {
+  color: blue;
+  font-weight: normal;
+  text-decoration: none;
+}
 
-<script type="module" crossorigin="" src="./srcs/main.CWb1jGOY.js.download"></script>
-<link rel="modulepreload" href="http://localhost/public/dist/assets/vendor.BheUAKP8.js">
-<link rel="stylesheet" href="./srcs/main.BQZ6HuV0.css">      <!-- Google Tag Manager -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap 5.3.2 CSS -->
+.accordion-link::after {
+  content: "↗";
+  margin-left: auto;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
 
-<!-- end Widget Tracker Code -->  <script type="text/javascript" async="" src="./srcs/tag.js.download"></script><style>
-  .imageye-selected {
-    outline: 2px solid black !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
-  }
-</style><style>.village-iframe{width:100%;height:100%;border:none;display:block;position:fixed;top:0;left:0;z-index:2147483647;background:#0000003d;color-scheme:light}.village-iframe.village-loading{display:flex;justify-content:center;align-items:center}.village-iframe>.village-spinner{width:1.5rem;height:1.5rem;border:2px solid #000;border-left-color:transparent;border-bottom-color:transparent;border-radius:50%;animation:spin .45s linear infinite}.village-iframe.village-hidden{display:none}@keyframes spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.village-hidden{display:none}[village-paths-data=facepiles]{display:flex;align-items:center;padding-right:.5rem}[village-paths-data=facepiles] img{width:1.5rem;height:1.5rem;border-radius:50%;margin-right:-.5rem}[village-paths-data=facepiles] img.village-facepiler-avatar-not-found{filter:blur(7px)}[village-paths-data=facepiles] img:last-child{margin-right:0}[village-paths-data=count]{padding-right:.25rem}[village-paths-availability=error],[village-paths-availability=found],[village-paths-availability=not-found],[village-paths-availability=not-activated]{display:none!important}[village-paths-availability=loading]{display:inline-flex!important}</style><script id="simplify-jobs-page-script" src="chrome-extension://pbanhockgagggenencehbnadejlgchfc/js/pageScript.bundle.js"></script></head>
+.accordion-link:hover {
+  color: blue;
+  text-decoration: underline;
+}
 
-<body x-data="" class="bg-gray-100" cz-shortcut-listen="true">
-      <!-- Google Tag Manager (noscript) -->
+.accordion-link::after {
+  display: none; /* removes the default chevron */
+}
 
-<!-- End Google Tag Manager (noscript) -->       <div class="relative container mx-auto max-w-5xl overflow-hidden">
-    <div class="prose max-w-5xl prose-img:my-0 bg-white">
+ul.links li {
+  list-style: none;
+  padding: 0 0 10px;
+}
 
-      
-      
-<div id="root" class="flex flex-col mx-auto max-w-5xl text-white bg-black pt-20">
-  
-    <section x-data="accordionGroup()" id="owner-resources" class="relative flex flex-col my-6 px-4 md:px-12 space-y-5">
-    <h1 class="w-full my-0 text-emerald-500 font-medium text-center text-3xl md:text-5xl underline">
-      Owner's Resources    </h1>
-        <div id="property-condition" class="flex flex-col space-y-2">
-          <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropertyCondition" aria-expanded="false" aria-controls="collapsePropertyCondition" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50">
-            <span>Property Condition Disclosure Reports</span>
-            <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-              <img class="hidden md:block md:w-28 md:h-28" src="./srcs/wake-board-1.png" alt="">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform accordion-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
-              </svg>
-            </div>
-          </button>
-          <div id="collapsePropertyCondition" class="collapse">
-                        <ul class="list-none">
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%201%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 1 Lot 1 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%201%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 1 Lot 2 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%201%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 1 Lot 3 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%201%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 1 Lot 4 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%202%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 2 Lot 1 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%202%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 2 Lot 2 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%202%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 2 Lot 3 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%202%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 2 Lot 4 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%202%20Lot%205%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 2 Lot 5 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%203%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 3 Lot 1 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%203%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 3 Lot 2 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%204%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 4 Lot 1 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%204%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 4 Lot 2 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%204%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 4 Lot 3 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%204%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 4 Lot 4 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%204%20Lot%205%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 4 Lot 5 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%205%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 5 Lot 1 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%205%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 5 Lot 2 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%205%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 5 Lot 3 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%205%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 5 Lot 4 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/property-condition/Block%205%20Lot%205%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Block 5 Lot 5 Property Condition Disclosure Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                          </ul>
-                      </div>
-        </div>
-                      <a href="http://localhost/public/docs/crystal-view-purchase-and-sale-agreement.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Purchase and Sale Agreement</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/fishing-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/representation-confirmation-disclosure-acknowledgement.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Representation Confirmation &amp; Disclosure Acknowledgement</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/hike-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/escrow-instructions-deposit-of-earnest-money.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Escrow Instructions/Deposit of Earnest Money</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/wake-board-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/title-report.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Title Report</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/fishing-2.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/owners-special-warranty-deed.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Owner's Special Warranty Deed</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/bike-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/crystal-view-vicinity-map-site-plan.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Vicinity Map &amp; Site Plan</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/snow-tube-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/final-recorded-plat.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Final Recorded Plat</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/horse-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                                <div id="homesite-maps" class="flex flex-col space-y-2">
-          <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseHomesiteMaps" aria-expanded="false" aria-controls="collapseHomesiteMaps" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50">
-            <span>Homesite Specific Topo/Boundary Maps</span>
-            <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-              <img class="hidden md:block md:w-28 md:h-28" src="./srcs/ski-1.png" alt="">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform accordion-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
-              </svg>
-            </div>
-          </button>
-          <div id="collapseHomesiteMaps" class="collapse">
-                        <ul class="list-none">
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%201.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 1 Lot 1</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%202.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 1 Lot 2</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%203.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 1 Lot 3</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%204.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 1 Lot 4</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%201.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 2 Lot 1</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%202.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 2 Lot 2</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%203.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 2 Lot 3</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%204.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 2 Lot 4</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%205.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 2 Lot 5</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%203_Lot%201.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 3 Lot 1</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%203_Lot%202.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 3 Lot 2</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%201.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 4 Lot 1</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%202.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 4 Lot 2</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%203.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 4 Lot 3</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%204.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 4 Lot 4</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%205.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 4 Lot 5</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%201.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 5 Lot 1</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%202.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 5 Lot 2</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%203.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 5 Lot 3</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%204.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 5 Lot 4</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%205.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Crystal View Block 5 Lot 5</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                          </ul>
-                      </div>
-        </div>
-                      <a href="http://localhost/public/docs/crystal-view-architectural-standards-and-guidelines.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Architectural Standards &amp; Guidelines </span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/hike-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-            </section>
-    <section x-data="accordionGroup()" id="hoa-documents" class="relative flex flex-col my-6 px-4 md:px-12 space-y-5">
-    <h1 class="w-full my-0 text-emerald-500 font-medium text-center text-3xl md:text-5xl underline">
-      HOA Documents    </h1>
-                <a href="http://localhost/public/docs/smca-articles-of-incorporation.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Schweitzer Mountain Community Association Articles of Incorporation</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/ski-2.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/smca-bylaws.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Schweitzer Mountain Community Association Bylaws</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/fishing-2.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/smca-master-declaration-ccrs-amendments.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Schweitzer Mountain Community Association Master Declaration &amp; CC&amp;R's and Amendments</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/ski-4.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/smca-budget.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Schweitzer Mountain Association Budget</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/kayak-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/cvoa-articles-of-incorporation.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Owners Association Articles of Incorporation</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/bike-2.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/cvoa-bylaws-organizational-minutes.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Owner's Association By-Laws &amp; Organizational Minutes</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/snowman-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/cvoa-ccrs-and-maintenance-association-ccrs.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Owners Association CC&amp;R's &amp; Maintenance Association CC&amp;R's</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/snow-board-2.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/cvoa-draft-budget.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Owners Association Draft Budget</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/sail-boat-1.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                      <a href="http://localhost/public/docs/crystal-view-rules-and-regulations.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Crystal View Rules &amp; Regulations</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/ski-3.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-            </section>
-    <section x-data="accordionGroup()" id="additional-owners-information" class="relative flex flex-col my-6 px-4 md:px-12 space-y-5">
-    <h1 class="w-full my-0 text-emerald-500 font-medium text-center text-3xl md:text-5xl underline">
-      Additional Owners Information    </h1>
-                <a href="http://localhost/public/docs/contact-list.pdf" class="relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-        <span>Contact List:  Services, Utilities, Approved Vendors</span>
-        <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-          <img class="hidden md:block md:w-28 md:h-28" src="./srcs/fishing-2.png" alt="">
-          <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-        </div>
-      </a>
-                                <div id="links-of-interest" class="flex flex-col space-y-2">
-          <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinksOfInterest" aria-expanded="false" aria-controls="collapseLinksOfInterest" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50">
-            <span>Links Of Interest</span>
-            <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
-              <img class="hidden md:block md:w-28 md:h-28" src="./srcs/ski-4.png" alt="">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform accordion-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
-              </svg>
-            </div>
-          </button>
-          <div id="collapseLinksOfInterest" class="collapse">
-                        <ul class="list-none">
-                                              <li>
-                  <a href="https://www.schweitzer.com/" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Schweitzer Mountain Resort Amenities, Activities &amp; Services</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="https://www.schweitzer.com/events/" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Schweitzer Event Calendar</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="https://www.whitepinelodge.us/media/pics/Map_Nbowl.jpg" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Schweitzer Trail Map: North Bowl</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="https://www.whitepinelodge.us/media/pics/Map_Sbowl.jpg" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Schweitzer Trail Map: South Bowl</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="https://www.whitepinelodge.us/media/pics/Map_Nordic.jpg" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Schweitzer Trail Map: Nordic</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="https://forecast.weather.gov/MapClick.php?site=otx&amp;smap=1&amp;textField1=48.332083333333&amp;textField2=-116.65375#.YYrZyi-B3Xl" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Schweitzer Basin Weather Forecast</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="https://www.schweitzer.com/discover/conditions-report/" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
-                    <span>Schweitzer Snow Report</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                                              <li>
-                  <a href="http://localhost/mll-magazine" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_self">
-                    <span>Mountain Lake Living Magazine</span>
-                    <div class="flex items-center shrink-0">
-                      <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
-                    </div>
-                  </a>
-                </li>
-                          </ul>
-                      </div>
-        </div>
-            </section>
-  </div>
+ul.links li:last-of-type {
+  padding: 0;
+}
+</style>
+<script id="simplify-jobs-page-script" src="chrome-extension://pbanhockgagggenencehbnadejlgchfc/js/pageScript.bundle.js"></script>
+</head>
+<body>
 
+<div class="container my-5">
+  <h1 class="mb-4">Owner's Resources</h1>
+  <div id="accordionOwnerResources" class="accordion">
 
-     <script defer="" src="./srcs/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;2194394e2d094eed998f3824916c78fd&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
-     <!-- Bootstrap 5.3 JS -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-     <style>
-       /* Custom styles to handle icon rotation with Bootstrap collapse */
-       button[data-bs-toggle="collapse"]:not(.collapsed) .accordion-icon {
-         transform: rotate(45deg);
-       }
-       .collapse {
-         transition: height 0.35s ease;
-       }
-     </style>
-     <script>
-       // Handle icon rotation on Bootstrap collapse events
-       document.addEventListener('DOMContentLoaded', function() {
-         const collapseElements = document.querySelectorAll('[data-bs-toggle="collapse"]');
-         collapseElements.forEach(function(element) {
-           const targetId = element.getAttribute('data-bs-target');
-           const targetElement = document.querySelector(targetId);
-           const icon = element.querySelector('.accordion-icon');
-           
-           if (targetElement && icon) {
-             targetElement.addEventListener('show.bs.collapse', function() {
-               icon.style.transform = 'rotate(45deg)';
-             });
-             targetElement.addEventListener('hide.bs.collapse', function() {
-               icon.style.transform = 'rotate(0deg)';
-             });
-           }
-         });
-       });
-     </script>
-</div></div><cs-native-frame-holder hidden=""><template shadowrootmode="closed"><iframe id="cs-native-frame" hidden="" title="Intentionally blank" sandbox="allow-same-origin"></iframe></template></cs-native-frame-holder></body></html>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropertyCondition" aria-expanded="false" aria-controls="collapsePropertyCondition">
+          Property Condition Disclosure Reports
+        </button>
+      </h2>
+      <div id="collapsePropertyCondition" class="accordion-collapse collapse" data-bs-parent="#accordionOwnerResources">
+        <div class="accordion-body">
+          <ul class="links">
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%201%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 1 Lot 1 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%201%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 1 Lot 2 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%201%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 1 Lot 3 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%201%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 1 Lot 4 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%202%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 2 Lot 1 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%202%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 2 Lot 2 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%202%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 2 Lot 3 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%202%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 2 Lot 4 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%202%20Lot%205%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 2 Lot 5 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%203%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 3 Lot 1 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%203%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 3 Lot 2 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%204%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 4 Lot 1 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%204%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 4 Lot 2 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%204%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 4 Lot 3 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%204%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 4 Lot 4 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%204%20Lot%205%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 4 Lot 5 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%205%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 5 Lot 1 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%205%20Lot%202%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 5 Lot 2 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%205%20Lot%203%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 5 Lot 3 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%205%20Lot%204%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 5 Lot 4 Property Condition Disclosure Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/property-condition/Block%205%20Lot%205%20Property%20Condition%20Disclosure%20Report.pdf" target="_blank">Block 5 Lot 5 Property Condition Disclosure Report</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-purchase-sale">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/crystal-view-purchase-and-sale-agreement.pdf" target="_blank">
+          Crystal View Purchase and Sale Agreement
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-representation">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/representation-confirmation-disclosure-acknowledgement.pdf" target="_blank">
+          Representation Confirmation & Disclosure Acknowledgement
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-escrow">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/escrow-instructions-deposit-of-earnest-money.pdf" target="_blank">
+          Escrow Instructions/Deposit of Earnest Money
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-title-report">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/title-report.pdf" target="_blank">
+          Title Report
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-warranty-deed">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/owners-special-warranty-deed.pdf" target="_blank">
+          Owner's Special Warranty Deed
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-vicinity-map">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/crystal-view-vicinity-map-site-plan.pdf" target="_blank">
+          Crystal View Vicinity Map & Site Plan
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-recorded-plat">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/final-recorded-plat.pdf" target="_blank">
+          Final Recorded Plat
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHomesiteMaps" aria-expanded="false" aria-controls="collapseHomesiteMaps">
+          Homesite Specific Topo/Boundary Maps
+        </button>
+      </h2>
+      <div id="collapseHomesiteMaps" class="accordion-collapse collapse" data-bs-parent="#accordionOwnerResources">
+        <div class="accordion-body">
+          <ul class="links">
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%201.pdf" target="_blank">Crystal View Block 1 Lot 1</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%202.pdf" target="_blank">Crystal View Block 1 Lot 2</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%203.pdf" target="_blank">Crystal View Block 1 Lot 3</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%204.pdf" target="_blank">Crystal View Block 1 Lot 4</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%201.pdf" target="_blank">Crystal View Block 2 Lot 1</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%202.pdf" target="_blank">Crystal View Block 2 Lot 2</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%203.pdf" target="_blank">Crystal View Block 2 Lot 3</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%204.pdf" target="_blank">Crystal View Block 2 Lot 4</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%202_Lot%205.pdf" target="_blank">Crystal View Block 2 Lot 5</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%203_Lot%201.pdf" target="_blank">Crystal View Block 3 Lot 1</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%203_Lot%202.pdf" target="_blank">Crystal View Block 3 Lot 2</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%201.pdf" target="_blank">Crystal View Block 4 Lot 1</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%202.pdf" target="_blank">Crystal View Block 4 Lot 2</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%203.pdf" target="_blank">Crystal View Block 4 Lot 3</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%204.pdf" target="_blank">Crystal View Block 4 Lot 4</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%204_Lot%205.pdf" target="_blank">Crystal View Block 4 Lot 5</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%201.pdf" target="_blank">Crystal View Block 5 Lot 1</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%202.pdf" target="_blank">Crystal View Block 5 Lot 2</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%203.pdf" target="_blank">Crystal View Block 5 Lot 3</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%204.pdf" target="_blank">Crystal View Block 5 Lot 4</a></li>
+            <li><a class="accordion-link" href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%205_Lot%205.pdf" target="_blank">Crystal View Block 5 Lot 5</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-architectural">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/crystal-view-architectural-standards-and-guidelines.pdf" target="_blank">
+          Crystal View Architectural Standards & Guidelines
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+  </div> <!-- .ACCORDION -->
+
+  <h1 class="mb-4 mt-5">HOA Documents</h1>
+  <div id="accordionHOADocuments" class="accordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-smca-articles">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/smca-articles-of-incorporation.pdf" target="_blank">
+          Schweitzer Mountain Community Association Articles of Incorporation
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-smca-bylaws">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/smca-bylaws.pdf" target="_blank">
+          Schweitzer Mountain Community Association Bylaws
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-smca-declaration">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/smca-master-declaration-ccrs-amendments.pdf" target="_blank">
+          Schweitzer Mountain Community Association Master Declaration & CC&R's and Amendments
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-smca-budget">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/smca-budget.pdf" target="_blank">
+          Schweitzer Mountain Association Budget
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-cvoa-articles">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/cvoa-articles-of-incorporation.pdf" target="_blank">
+          Crystal View Owners Association Articles of Incorporation
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-cvoa-bylaws">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/cvoa-bylaws-organizational-minutes.pdf" target="_blank">
+          Crystal View Owner's Association By-Laws & Organizational Minutes
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-cvoa-ccrs">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/cvoa-ccrs-and-maintenance-association-ccrs.pdf" target="_blank">
+          Crystal View Owners Association CC&R's & Maintenance Association CC&R's
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-cvoa-budget">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/cvoa-draft-budget.pdf" target="_blank">
+          Crystal View Owners Association Draft Budget
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-cvoa-rules">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/crystal-view-rules-and-regulations.pdf" target="_blank">
+          Crystal View Rules & Regulations
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+  </div> <!-- .ACCORDION -->
+
+  <h1 class="mb-4 mt-5">Additional Owners Information</h1>
+  <div id="accordionAdditionalInfo" class="accordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="h-contact-list">
+        <a class="accordion-button collapsed accordion-link" href="http://localhost/public/docs/contact-list.pdf" target="_blank">
+          Contact List: Services, Utilities, Approved Vendors
+        </a>
+      </h2>
+    </div> <!-- .ACCORDION-ITEM -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinksOfInterest" aria-expanded="false" aria-controls="collapseLinksOfInterest">
+          Links Of Interest
+        </button>
+      </h2>
+      <div id="collapseLinksOfInterest" class="accordion-collapse collapse" data-bs-parent="#accordionAdditionalInfo">
+        <div class="accordion-body">
+          <ul class="links">
+            <li><a class="accordion-link" href="https://www.schweitzer.com/" target="_blank">Schweitzer Mountain Resort Amenities, Activities & Services</a></li>
+            <li><a class="accordion-link" href="https://www.schweitzer.com/events/" target="_blank">Schweitzer Event Calendar</a></li>
+            <li><a class="accordion-link" href="https://www.whitepinelodge.us/media/pics/Map_Nbowl.jpg" target="_blank">Schweitzer Trail Map: North Bowl</a></li>
+            <li><a class="accordion-link" href="https://www.whitepinelodge.us/media/pics/Map_Sbowl.jpg" target="_blank">Schweitzer Trail Map: South Bowl</a></li>
+            <li><a class="accordion-link" href="https://www.whitepinelodge.us/media/pics/Map_Nordic.jpg" target="_blank">Schweitzer Trail Map: Nordic</a></li>
+            <li><a class="accordion-link" href="https://forecast.weather.gov/MapClick.php?site=otx&smap=1&textField1=48.332083333333&textField2=-116.65375#.YYrZyi-B3Xl" target="_blank">Schweitzer Basin Weather Forecast</a></li>
+            <li><a class="accordion-link" href="https://www.schweitzer.com/discover/conditions-report/" target="_blank">Schweitzer Snow Report</a></li>
+            <li><a class="accordion-link" href="http://localhost/mll-magazine" target="_self">Mountain Lake Living Magazine</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- .ACCORDION-ITEM -->
+
+  </div> <!-- .ACCORDION -->
+
+</div> <!-- .CONTAINER -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Verify Bootstrap loaded
+  window.addEventListener('load', function() {
+    if (typeof bootstrap === 'undefined') {
+      console.error('ERROR: Bootstrap JavaScript failed to load!');
+      alert('Bootstrap JavaScript failed to load. Please check your internet connection and try refreshing the page.');
+    } else {
+      console.log('Bootstrap loaded successfully');
+    }
+  });
+</script>
+<script defer="" src="./srcs/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;2194394e2d094eed998f3824916c78fd&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+</body>
+</html>

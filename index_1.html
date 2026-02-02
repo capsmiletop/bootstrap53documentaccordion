@@ -14,6 +14,7 @@
 <script type="module" crossorigin="" src="./srcs/main.CWb1jGOY.js.download"></script>
 <link rel="modulepreload" href="http://localhost/public/dist/assets/vendor.BheUAKP8.js">
 <link rel="stylesheet" href="./srcs/main.BQZ6HuV0.css">      <!-- Google Tag Manager -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap 5.3.2 CSS -->
 
 <!-- end Widget Tracker Code -->  <script type="text/javascript" async="" src="./srcs/tag.js.download"></script><style>
   .imageye-selected {
@@ -35,17 +36,17 @@
     <section x-data="accordionGroup()" id="owner-resources" class="relative flex flex-col my-6 px-4 md:px-12 space-y-5">
     <h1 class="w-full my-0 text-emerald-500 font-medium text-center text-3xl md:text-5xl underline">
       Owner's Resources    </h1>
-                          <div id="property-condition" x-data="accordion(id = 0)" class="flex flex-col space-y-2">
-          <button @click="toggleExpand" :aria-expanded="expanded" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" aria-expanded="false">
+        <div id="property-condition" class="flex flex-col space-y-2">
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#collapsePropertyCondition" aria-expanded="false" aria-controls="collapsePropertyCondition" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50">
             <span>Property Condition Disclosure Reports</span>
             <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
               <img class="hidden md:block md:w-28 md:h-28" src="./srcs/wake-board-1.png" alt="">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform" :class="{ &#39;rotate-45&#39;: expanded }">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform accordion-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
               </svg>
             </div>
           </button>
-          <div x-show="expanded" x-collapse="" style="display: none; height: 0px; overflow: hidden;" hidden="">
+          <div id="collapsePropertyCondition" class="collapse">
                         <ul class="list-none">
                                               <li>
                   <a href="http://localhost/public/docs/property-condition/Block%201%20Lot%201%20Property%20Condition%20Disclosure%20Report.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
@@ -267,17 +268,17 @@
           <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
         </div>
       </a>
-                                <div id="homesite-maps" x-data="accordion(id = 8)" class="flex flex-col space-y-2">
-          <button @click="toggleExpand" :aria-expanded="expanded" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" aria-expanded="false">
+                                <div id="homesite-maps" class="flex flex-col space-y-2">
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseHomesiteMaps" aria-expanded="false" aria-controls="collapseHomesiteMaps" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50">
             <span>Homesite Specific Topo/Boundary Maps</span>
             <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
               <img class="hidden md:block md:w-28 md:h-28" src="./srcs/ski-1.png" alt="">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform" :class="{ &#39;rotate-45&#39;: expanded }">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform accordion-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
               </svg>
             </div>
           </button>
-          <div x-show="expanded" x-collapse="" style="display: none; height: 0px; overflow: hidden;" hidden="">
+          <div id="collapseHomesiteMaps" class="collapse">
                         <ul class="list-none">
                                               <li>
                   <a href="http://localhost/public/docs/homesite-maps/Crystal%20View_Block%201_Lot%201.pdf" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
@@ -535,17 +536,17 @@
           <img class="w-8 h-8" src="./srcs/document-arrow.png" alt="">
         </div>
       </a>
-                                <div id="links-of-interest" x-data="accordion(id = 1)" class="flex flex-col space-y-2">
-          <button @click="toggleExpand" :aria-expanded="expanded" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" aria-expanded="false">
+                                <div id="links-of-interest" class="flex flex-col space-y-2">
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinksOfInterest" aria-expanded="false" aria-controls="collapseLinksOfInterest" class="w-full relative p-7 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base font-medium text-left md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50">
             <span>Links Of Interest</span>
             <div class="flex items-center shrink-0 lg:absolute lg:-top-4 lg:right-4 ml-4">
               <img class="hidden md:block md:w-28 md:h-28" src="./srcs/ski-4.png" alt="">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform" :class="{ &#39;rotate-45&#39;: expanded }">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8 stroke-2 transition-transform accordion-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
               </svg>
             </div>
           </button>
-          <div x-show="expanded" x-collapse="" style="display: none; height: 0px; overflow: hidden;" hidden="">
+          <div id="collapseLinksOfInterest" class="collapse">
                         <ul class="list-none">
                                               <li>
                   <a href="https://www.schweitzer.com/" class="relative p-7 pr-4 md:py-0 lg:py-7 border-4 border-emerald-500 rounded-3xl text-base md:text-xl text-white no-underline flex items-center justify-between hover:bg-emerald-50/50" target="_blank">
@@ -619,4 +620,35 @@
 
 
      <script defer="" src="./srcs/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;2194394e2d094eed998f3824916c78fd&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+     <!-- Bootstrap 5.3 JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <style>
+       /* Custom styles to handle icon rotation with Bootstrap collapse */
+       button[data-bs-toggle="collapse"]:not(.collapsed) .accordion-icon {
+         transform: rotate(45deg);
+       }
+       .collapse {
+         transition: height 0.35s ease;
+       }
+     </style>
+     <script>
+       // Handle icon rotation on Bootstrap collapse events
+       document.addEventListener('DOMContentLoaded', function() {
+         const collapseElements = document.querySelectorAll('[data-bs-toggle="collapse"]');
+         collapseElements.forEach(function(element) {
+           const targetId = element.getAttribute('data-bs-target');
+           const targetElement = document.querySelector(targetId);
+           const icon = element.querySelector('.accordion-icon');
+           
+           if (targetElement && icon) {
+             targetElement.addEventListener('show.bs.collapse', function() {
+               icon.style.transform = 'rotate(45deg)';
+             });
+             targetElement.addEventListener('hide.bs.collapse', function() {
+               icon.style.transform = 'rotate(0deg)';
+             });
+           }
+         });
+       });
+     </script>
 </div></div><cs-native-frame-holder hidden=""><template shadowrootmode="closed"><iframe id="cs-native-frame" hidden="" title="Intentionally blank" sandbox="allow-same-origin"></iframe></template></cs-native-frame-holder></body></html>
